@@ -1,0 +1,323 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		34FFBB8C174CA7BE00C390EC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34FFBB8B174CA7BE00C390EC /* UIKit.framework */; };
+		34FFBB8E174CA7BE00C390EC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34FFBB8D174CA7BE00C390EC /* Foundation.framework */; };
+		34FFBB90174CA7BE00C390EC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34FFBB8F174CA7BE00C390EC /* CoreGraphics.framework */; };
+		34FFBB96174CA7BE00C390EC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 34FFBB94174CA7BE00C390EC /* InfoPlist.strings */; };
+		34FFBB98174CA7BE00C390EC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FFBB97174CA7BE00C390EC /* main.m */; };
+		34FFBB9C174CA7BE00C390EC /* DJAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FFBB9B174CA7BE00C390EC /* DJAppDelegate.m */; };
+		34FFBB9E174CA7BE00C390EC /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 34FFBB9D174CA7BE00C390EC /* Default.png */; };
+		34FFBBA0174CA7BE00C390EC /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 34FFBB9F174CA7BE00C390EC /* Default@2x.png */; };
+		34FFBBA2174CA7BE00C390EC /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 34FFBBA1174CA7BE00C390EC /* Default-568h@2x.png */; };
+		34FFBBA5174CA7BE00C390EC /* DJViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FFBBA4174CA7BE00C390EC /* DJViewController.m */; };
+		34FFBBA8174CA7BE00C390EC /* DJViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 34FFBBA6174CA7BE00C390EC /* DJViewController.xib */; };
+		34FFBBB0174CA7E000C390EC /* DJCheckbox.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FFBBAF174CA7E000C390EC /* DJCheckbox.m */; };
+		34FFBBB3174CA81E00C390EC /* checkbox_checked.png in Resources */ = {isa = PBXBuildFile; fileRef = 34FFBBB1174CA81E00C390EC /* checkbox_checked.png */; };
+		34FFBBB4174CA81E00C390EC /* checkbox_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 34FFBBB2174CA81E00C390EC /* checkbox_normal.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		34BE80B0174CC8EC00FB601A /* DJChekboxDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DJChekboxDelegate.h; sourceTree = "<group>"; };
+		34FFBB88174CA7BE00C390EC /* CustomizeCheckbox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomizeCheckbox.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		34FFBB8B174CA7BE00C390EC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		34FFBB8D174CA7BE00C390EC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		34FFBB8F174CA7BE00C390EC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		34FFBB93174CA7BE00C390EC /* CustomizeCheckbox-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CustomizeCheckbox-Info.plist"; sourceTree = "<group>"; };
+		34FFBB95174CA7BE00C390EC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		34FFBB97174CA7BE00C390EC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		34FFBB99174CA7BE00C390EC /* CustomizeCheckbox-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CustomizeCheckbox-Prefix.pch"; sourceTree = "<group>"; };
+		34FFBB9A174CA7BE00C390EC /* DJAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DJAppDelegate.h; sourceTree = "<group>"; };
+		34FFBB9B174CA7BE00C390EC /* DJAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DJAppDelegate.m; sourceTree = "<group>"; };
+		34FFBB9D174CA7BE00C390EC /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		34FFBB9F174CA7BE00C390EC /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		34FFBBA1174CA7BE00C390EC /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		34FFBBA3174CA7BE00C390EC /* DJViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DJViewController.h; sourceTree = "<group>"; };
+		34FFBBA4174CA7BE00C390EC /* DJViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DJViewController.m; sourceTree = "<group>"; };
+		34FFBBA7174CA7BE00C390EC /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/DJViewController.xib; sourceTree = "<group>"; };
+		34FFBBAE174CA7E000C390EC /* DJCheckbox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DJCheckbox.h; sourceTree = "<group>"; };
+		34FFBBAF174CA7E000C390EC /* DJCheckbox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DJCheckbox.m; sourceTree = "<group>"; };
+		34FFBBB1174CA81E00C390EC /* checkbox_checked.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = checkbox_checked.png; sourceTree = "<group>"; };
+		34FFBBB2174CA81E00C390EC /* checkbox_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = checkbox_normal.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		34FFBB85174CA7BE00C390EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34FFBB8C174CA7BE00C390EC /* UIKit.framework in Frameworks */,
+				34FFBB8E174CA7BE00C390EC /* Foundation.framework in Frameworks */,
+				34FFBB90174CA7BE00C390EC /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		34FFBB7F174CA7BE00C390EC = {
+			isa = PBXGroup;
+			children = (
+				34FFBB91174CA7BE00C390EC /* CustomizeCheckbox */,
+				34FFBB8A174CA7BE00C390EC /* Frameworks */,
+				34FFBB89174CA7BE00C390EC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		34FFBB89174CA7BE00C390EC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				34FFBB88174CA7BE00C390EC /* CustomizeCheckbox.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		34FFBB8A174CA7BE00C390EC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				34FFBB8B174CA7BE00C390EC /* UIKit.framework */,
+				34FFBB8D174CA7BE00C390EC /* Foundation.framework */,
+				34FFBB8F174CA7BE00C390EC /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		34FFBB91174CA7BE00C390EC /* CustomizeCheckbox */ = {
+			isa = PBXGroup;
+			children = (
+				34FFBBB1174CA81E00C390EC /* checkbox_checked.png */,
+				34FFBBB2174CA81E00C390EC /* checkbox_normal.png */,
+				34FFBB9A174CA7BE00C390EC /* DJAppDelegate.h */,
+				34FFBB9B174CA7BE00C390EC /* DJAppDelegate.m */,
+				34FFBBA3174CA7BE00C390EC /* DJViewController.h */,
+				34FFBBA4174CA7BE00C390EC /* DJViewController.m */,
+				34FFBBA6174CA7BE00C390EC /* DJViewController.xib */,
+				34BE80B0174CC8EC00FB601A /* DJChekboxDelegate.h */,
+				34FFBB92174CA7BE00C390EC /* Supporting Files */,
+				34FFBBAE174CA7E000C390EC /* DJCheckbox.h */,
+				34FFBBAF174CA7E000C390EC /* DJCheckbox.m */,
+			);
+			path = CustomizeCheckbox;
+			sourceTree = "<group>";
+		};
+		34FFBB92174CA7BE00C390EC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				34FFBB93174CA7BE00C390EC /* CustomizeCheckbox-Info.plist */,
+				34FFBB94174CA7BE00C390EC /* InfoPlist.strings */,
+				34FFBB97174CA7BE00C390EC /* main.m */,
+				34FFBB99174CA7BE00C390EC /* CustomizeCheckbox-Prefix.pch */,
+				34FFBB9D174CA7BE00C390EC /* Default.png */,
+				34FFBB9F174CA7BE00C390EC /* Default@2x.png */,
+				34FFBBA1174CA7BE00C390EC /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		34FFBB87174CA7BE00C390EC /* CustomizeCheckbox */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 34FFBBAB174CA7BE00C390EC /* Build configuration list for PBXNativeTarget "CustomizeCheckbox" */;
+			buildPhases = (
+				34FFBB84174CA7BE00C390EC /* Sources */,
+				34FFBB85174CA7BE00C390EC /* Frameworks */,
+				34FFBB86174CA7BE00C390EC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CustomizeCheckbox;
+			productName = CustomizeCheckbox;
+			productReference = 34FFBB88174CA7BE00C390EC /* CustomizeCheckbox.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		34FFBB80174CA7BE00C390EC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = DJ;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = DianJin;
+			};
+			buildConfigurationList = 34FFBB83174CA7BE00C390EC /* Build configuration list for PBXProject "CustomizeCheckbox" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 34FFBB7F174CA7BE00C390EC;
+			productRefGroup = 34FFBB89174CA7BE00C390EC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				34FFBB87174CA7BE00C390EC /* CustomizeCheckbox */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		34FFBB86174CA7BE00C390EC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34FFBB96174CA7BE00C390EC /* InfoPlist.strings in Resources */,
+				34FFBB9E174CA7BE00C390EC /* Default.png in Resources */,
+				34FFBBA0174CA7BE00C390EC /* Default@2x.png in Resources */,
+				34FFBBA2174CA7BE00C390EC /* Default-568h@2x.png in Resources */,
+				34FFBBA8174CA7BE00C390EC /* DJViewController.xib in Resources */,
+				34FFBBB3174CA81E00C390EC /* checkbox_checked.png in Resources */,
+				34FFBBB4174CA81E00C390EC /* checkbox_normal.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		34FFBB84174CA7BE00C390EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34FFBB98174CA7BE00C390EC /* main.m in Sources */,
+				34FFBB9C174CA7BE00C390EC /* DJAppDelegate.m in Sources */,
+				34FFBBA5174CA7BE00C390EC /* DJViewController.m in Sources */,
+				34FFBBB0174CA7E000C390EC /* DJCheckbox.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		34FFBB94174CA7BE00C390EC /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				34FFBB95174CA7BE00C390EC /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		34FFBBA6174CA7BE00C390EC /* DJViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				34FFBBA7174CA7BE00C390EC /* en */,
+			);
+			name = DJViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		34FFBBA9174CA7BE00C390EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		34FFBBAA174CA7BE00C390EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		34FFBBAC174CA7BE00C390EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CustomizeCheckbox/CustomizeCheckbox-Prefix.pch";
+				INFOPLIST_FILE = "CustomizeCheckbox/CustomizeCheckbox-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		34FFBBAD174CA7BE00C390EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CustomizeCheckbox/CustomizeCheckbox-Prefix.pch";
+				INFOPLIST_FILE = "CustomizeCheckbox/CustomizeCheckbox-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		34FFBB83174CA7BE00C390EC /* Build configuration list for PBXProject "CustomizeCheckbox" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				34FFBBA9174CA7BE00C390EC /* Debug */,
+				34FFBBAA174CA7BE00C390EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		34FFBBAB174CA7BE00C390EC /* Build configuration list for PBXNativeTarget "CustomizeCheckbox" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				34FFBBAC174CA7BE00C390EC /* Debug */,
+				34FFBBAD174CA7BE00C390EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 34FFBB80174CA7BE00C390EC /* Project object */;
+}
