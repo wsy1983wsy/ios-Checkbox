@@ -23,13 +23,14 @@
 //	 Do any additional setup after loading the view, typically from a nib.
     self.checkbox = [[DJCheckbox alloc]initWithTitle:@"aaaaaB"];
     checkbox.tag = 1;
+    checkbox.frame = CGRectMake(5, 5, [checkbox getNeededWidth], [checkbox getNeededHeight]);
     checkbox.delegate = self;
     [self.view addSubview:checkbox];
     
     self.checkbox2 = [[DJCheckbox alloc]initWithTitle:@"你好"];
     checkbox2.tag = 2;
     checkbox2.delegate = self;
-    checkbox2.frame = CGRectMake(0, 40, 300, 300);
+    checkbox2.frame = CGRectMake(5, 40, [checkbox2 getNeededWidth], [checkbox2 getNeededHeight]);
     [checkbox2 setTextAlignment:DJCheckboxTextAlignmentLeft];
     [self.view addSubview:checkbox2];
 }

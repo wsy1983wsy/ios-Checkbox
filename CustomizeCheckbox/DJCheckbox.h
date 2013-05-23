@@ -37,4 +37,6 @@ typedef  enum {
 - (void)toggleState;
 - (void)setTextAlignment:(DJCheckboxTextAlignment)textAlignment;
 - (void)setTitle:(NSString *)title;
+- (float)getNeededHeight;
+- (float)getNeededWidth;
 @end

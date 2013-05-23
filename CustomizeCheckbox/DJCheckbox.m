@@ -8,6 +8,9 @@
 
 #import "DJCheckbox.h"
 
+#define kCheckedImage   @"checkbox_checked.png"
+#define kUnCheckedImage @"checkbox_normal.png"
+
 @implementation DJCheckbox
 @synthesize checkboxImageView;
 @synthesize titleLabel;
@@ -19,19 +22,18 @@
 @synthesize delegate;
 
 - (id)init{
-    UIImage *image = [UIImage imageNamed:@"checkbox_normal.png"];
+    UIImage *image = [UIImage imageNamed:kUnCheckedImage];
     imageSize = CGRectMake(0, 0, image.size.width, image.size.height);
     self =  [self initWithFrame:CGRectMake(0, 0, image.size.width, image.size.height)];
     return self;
 }
 
 - (id)initWithTitle:(NSString *)title{
-    UIImage *image = [UIImage imageNamed:@"checkbox_normal.png"];
+    UIImage *image = [UIImage imageNamed:kUnCheckedImage];
     imageSize = CGRectMake(0, 0, image.size.width, image.size.height);
     self = [self initWithFrame:CGRectMake(0, 0, image.size.width, image.size.height)];
     if(self){
         titleLabel.text = title;
-        [self autoFitFontToHeight];
         [self autoFitWidthToText];
         [self layoutSubviews];
     }
@@ -47,7 +49,7 @@
         textColor = [UIColor blackColor];
         textFont = [UIFont systemFontOfSize:20.0f];
         
-        UIImage *image = [UIImage imageNamed:@"checkbox_normal.png"];
+        UIImage *image = [UIImage imageNamed:kUnCheckedImage];
         checkboxImageView = [[UIImageView alloc]initWithImage:image];
         checkboxImageView.frame = CGRectMake(0, 0, image.size.width, image.size.height);
         [checkboxImageView sizeToFit];
@@ -56,7 +58,7 @@
         titleLabel.textColor = textColor;
         titleLabel.font = textFont;
         titleLabel.backgroundColor = [UIColor clearColor];
-        [self autoFitFontToHeight];
+        titleLabel.lineBreakMode = NSLineBreakByWordWrapping;
         [self addSubview:checkboxImageView];
         [self addSubview:titleLabel];
         self.clipsToBounds = NO;
@@ -99,9 +101,9 @@
 
 - (void)setState:(DJcheckboxState)state{
     checkState = state;
-    UIImage *image = [UIImage imageNamed:@"checkbox_checked.png"];
+    UIImage *image = [UIImage imageNamed:kCheckedImage];
     if(state == DJCheckboxUnchecked){
-        image = [UIImage imageNamed:@"checkbox_normal.png"];
+        image = [UIImage imageNamed:kUnCheckedImage];
     }
     [checkboxImageView setImage:image];
     
@@ -121,14 +123,12 @@
 
 - (void)setTextAlignment:(DJCheckboxTextAlignment)alignment{
     textAlignment = alignment;
-    [self autoFitFontToHeight];
     [self autoFitWidthToText];
     [self layoutSubviews];
 }
 
 -(void)setTitle:(NSString *)title{
     titleLabel.text = title;
-    [self autoFitFontToHeight];
     [self autoFitWidthToText];
     [self layoutSubviews];
 }
@@ -137,5 +137,31 @@
     [super beginTrackingWithTouch:touch withEvent:event];
     [self toggleState];
     return YES;
+}
+
+- (float)getNeededHeight{
+    float height = imageSize.size.height;
+    UIFont *font = [UIFont fontWithName:titleLabel.font.fontName size:20];
+    NSString *title = titleLabel.text;
+    CGSize labelSize;
+    if(title){
+        labelSize = [title sizeWithFont:font];
+    } else {
+        labelSize = [@"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz" sizeWithFont:font];
+    }
+    if(labelSize.height > height){
+        height = labelSize.height;
+    }
+    return height;
+}
+
+- (float)getNeededWidth{
+    NSString *title = titleLabel.text;
+    if(title){
+        CGSize labelSize = [titleLabel.text sizeWithFont:titleLabel.font];
+        return labelSize.width + 2 + self.imageSize.size.width;
+    } else {
+        return self.imageSize.size.width + 2;
+    }
 }
 @end
